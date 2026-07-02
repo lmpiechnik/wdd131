@@ -1,0 +1,43 @@
+
+
+/*
+1) Tem que ter um header, uma área central com 3 colunas, um footer
+2) As colunas devem ser de tamanho igual
+3) Rodapé sempre fixo
+4) Coteúdo primeiro no HTML
+5) Lay out deve sem com uma marcação mínima
+*/
+
+body.container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.content {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+}
+
+.main {
+    flex: 1;
+}
+
+.sidebar,
+.ads {
+    flex-basis: 100px;
+}
+
+
+
+@media (min-width: 56.25em) { /* 900pz */
+    .content {
+        flex-direction: row;
+    }
+
+    .sidebar {
+    order: -1;
+    }
+}
+    
