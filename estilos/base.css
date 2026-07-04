@@ -1,0 +1,140 @@
+
+
+
+/*
+1) Header, área central com 3 colunas e footer
+2) As 3 colunas possuem o mesmo tamanho
+3) Footer permanece no final da página
+4) O conteúdo principal vem primeiro no HTML
+5) Layout com marcação mínima
+*/
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body.container {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, sans-serif;
+    background: #f2f2f2;
+}
+
+/* HEADER */
+
+header {
+    background: #1f567d;
+    color: white;
+    text-align: center;
+}
+
+header h1 {
+    padding: 20px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    background: #333;
+}
+
+nav li {
+    flex: 1;
+}
+
+nav a {
+    display: block;
+    padding: 15px;
+    color: white;
+    text-decoration: none;
+}
+
+nav a:hover {
+    background: #444;
+}
+
+/* MAIN */
+
+main {
+    flex: 1;
+    max-width: 1200px;
+    width: 95%;
+    margin: 30px auto;
+
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 20px;
+}
+
+main > h1 {
+    grid-column: 1 / -1;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+/* CARDS */
+
+.card {
+    background: white;
+    border: 1px solid #ccc;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.card h2 {
+    background: #1f567d;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+/* cartão Sobre Mim */
+
+.about {
+    grid-row: span 2;
+}
+
+.card-content {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+}
+
+.card-content img {
+    border-radius: 8px;
+}
+
+/* Demais cartões */
+
+.card img {
+    display: block;
+    margin: 20px auto;
+}
+
+.card p,
+.card ul {
+    padding: 20px;
+}
+
+.resources ul {
+    padding-left: 40px;
+}
+
+/* FOOTER */
+
+footer {
+    background: #1f567d;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+#lastModified {
+    color: yellow;
+    margin-top: 8px;
+}

@@ -1,0 +1,53 @@
+
+
+
+/*
+1) Header, área central com 3 colunas e footer
+2) As 3 colunas possuem o mesmo tamanho
+3) Footer permanece no final da página
+4) O conteúdo principal vem primeiro no HTML
+5) Layout com marcação mínima
+*/
+
+body {
+    background: red;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body.container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.content {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+}
+
+/* Três colunas com tamanhos iguais */
+.main,
+.sidebar,
+.ads {
+    flex: 1;
+}
+
+/* Layout desktop */
+@media (min-width: 56.25em) { /* 900px */
+
+    .content {
+        flex-direction: row;
+    }
+
+    /* Main continua primeiro no HTML,
+       mas sidebar aparece visualmente à esquerda */
+    .sidebar {
+        order: -1;
+    }
+}

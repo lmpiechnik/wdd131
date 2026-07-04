@@ -1,5 +1,6 @@
 
 
+
 /*
 1) Tem que ter um header, uma área central com 3 colunas, um footer
 2) As colunas devem ser de tamanho igual
@@ -7,7 +8,6 @@
 4) Coteúdo primeiro no HTML
 5) Lay out deve sem com uma marcação mínima
 */
-
 
 body.container {
     display: flex;
