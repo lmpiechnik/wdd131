@@ -21,7 +21,7 @@ body.container {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-    font-family: Arial, sans-serif;
+    font-family: 'roboto', sans-serif;
     background: #f2f2f2;
 }
 
