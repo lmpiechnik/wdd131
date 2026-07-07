@@ -1,0 +1,45 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 - Capítulos favoritos do Livro de Mórmon</title>
+    <meta name="description" content="Os usuários insiram seus capítulos favoritos do Livro de Mórmon e os exibam em uma lista na tela.">
+    <meta name="author" content="Luciano Milani Piechnik">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- Roboto -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="estilos/bom.css">
+    
+    <!-- JavaScript -->
+    <script src="scripts/bom.js" defer></script>
+   
+
+</head>
+
+<body>
+    <header>
+        <h1>O Livro de Mórmon - 10 principais</h1>
+    </header>
+    <main>
+        <label for="favchap">Insira o livro e o capítulo: </label>
+        <input type="text" id="favchap" placeholder="Alma 5">
+        <button type="submit">Adicionar capítulo</button>
+        <ul id="list">
+            <li>
+                Alma 5
+                <button aria-label="Excluir Alma 5" class="delete">❌</button>
+            </li>
+        </ul>
+    </main>
+    
+</body>
+
+</html>
+
+
+
