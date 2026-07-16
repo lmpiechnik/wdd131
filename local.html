@@ -1,0 +1,84 @@
+
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Buenos Aires</title>
+    <meta name="description" content="Desenvolvimento de uma página de um local.
+     / Disciplina: WDD 131 – Fundamentos da Web Dinâmica / Aluno: Luciano Piechnik">
+    <meta name="author" content="Luciano Milani Piechnik">
+    <link rel="stylesheet" href="estilos/local.css">
+    <link rel="stylesheet" href="estilos/local-large.css">
+
+    <!-- Fonte -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+
+    <!-- Ícones -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <script src="scripts/local.js" defer></script>
+</head>
+<body>
+
+    <header>
+    <h1>Buenos Aires</h1>
+</header>
+
+<main>
+
+    <picture>
+        <source
+            media="(min-width:768px)"
+            srcset="imagens/buenosaires-large.webp">
+
+        <img
+            src="imagens/buenosaires-small.webp"
+            alt="The Obelisk and Avenida 9 de Julio in Buenos Aires">
+    </picture>
+
+    <section class="card data">
+        <h2>Data</h2>
+
+        <p><strong>Country:</strong> Argentina</p>
+        <p><strong>Capital:</strong> Buenos Aires</p>
+        <p><strong>Population:</strong> 3.1 Million</p>
+        <p><strong>Language:</strong> Spanish</p>
+        <p><strong>Currency:</strong> Argentine Peso (ARS)</p>
+        <p><strong>Time Zone:</strong> UTC−3</p>
+        <p><strong>Known For:</strong> Tango, football, architecture and gastronomy.</p>
+    </section>
+
+    <section class="card weather">
+
+        <h2>Weather</h2>
+
+        <img
+            class="weather-icon"
+            src="imagens/weather.svg"
+            alt="Weather icon">
+
+        <p><strong>Temperature:</strong> <span id="temperature">8</span> °C</p>
+
+        <p><strong>Wind:</strong> <span id="windSpeed">18</span> km/h</p>
+
+        <p><strong>Condition:</strong> Partly Cloudy</p>
+
+        <p><strong>Wind Chill:</strong> <span id="windChill"></span></p>
+
+    </section>
+
+</main>
+
+<footer>
+    <p>Luciano Piechnik</p>
+    <p>&copy; <span id="currentyear"></span> | Buenos Aires | Argentina</p>
+    <p id="lastModified"></p>
+</footer>
+
+</body>
+</html>
+
+

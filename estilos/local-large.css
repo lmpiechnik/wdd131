@@ -1,0 +1,38 @@
+
+@media screen and (min-width:768px){
+
+main{
+    position:relative;
+    max-width:1200px;
+    margin:auto;
+}
+
+picture img{
+    width:100%;
+    display:block;
+}
+
+.data{
+    position:absolute;
+    top:40px;
+    left:40px;
+
+    width:320px;
+}
+
+.weather{
+    position:absolute;
+    bottom:40px;
+    right:40px;
+    width:280px;
+}
+
+.weather h2::after{
+    content:" ⛅";
+}
+
+.weather-icon{
+    display:none;
+}
+
+}
