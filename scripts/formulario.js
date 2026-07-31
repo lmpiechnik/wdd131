@@ -35,7 +35,6 @@ produtos.forEach(produto => {
     const option = document.createElement("option");
 
     option.value = produto.id;
-
     option.textContent = produto.nome;
 
     select.appendChild(option);
