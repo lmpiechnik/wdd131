@@ -105,3 +105,27 @@ footer{
     gap: 5px;           /* Espaço entre o botão e as estrelas */
     cursor: pointer;
 }
+
+
+@media screen and (max-width: 600px) {
+
+    body {
+        padding: 10px;
+    }
+
+    form {
+        padding: 15px;
+    }
+    
+    .rating {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    input,
+    select,
+    textarea {
+        width: 100%;
+    }
+
+}
