@@ -1,0 +1,121 @@
+
+
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Avaliação de Produto</title>
+    <meta name="description" content="Desenvolvimento de uma página de avaliação de produto.
+     / Disciplina: WDD 131 / Aluno: Luciano Piechnik">
+    <meta name="author" content="Luciano Milani Piechnik">
+    <link rel="stylesheet" href="styles/formulario.css">
+    <script src="scripts/formulario.js" defer></script>
+</head>
+
+<body>
+
+<header>
+    <h1>Avaliação de Produto</h1>
+</header>
+
+<main>
+
+<form method="get" action="avaliacao.html">
+
+    <label for="produto">Nome do Produto *</label>
+
+    <select id="produto" name="produto" required>
+        <option value="" selected disabled>
+            Selecione um Produto...
+        </option>
+    </select>
+
+    <fieldset>
+
+        <legend>Classificação Geral *</legend>
+
+        <div class="rating">
+            <label><input type="radio" name="rating" value="1" required> ★</label>
+            <label><input type="radio" name="rating" value="2"> ★★</label>
+            <label><input type="radio" name="rating" value="3"> ★★★</label>
+            <label><input type="radio" name="rating" value="4"> ★★★★</label>
+            <label><input type="radio" name="rating" value="5"> ★★★★★</label>
+        </div>
+
+    </fieldset>
+
+    <label for="installDate">
+        Data de Instalação *
+    </label>
+
+    <input
+        type="date"
+        id="installDate"
+        name="installDate"
+        required>
+
+    <fieldset>
+
+        <legend>Recursos Úteis</legend>
+
+        <label>
+            <input type="checkbox" name="features" value="Durabilidade">
+            Durabilidade
+        </label>
+
+        <label>
+            <input type="checkbox" name="features" value="Facilidade">
+            Facilidade de uso
+        </label>
+
+        <label>
+            <input type="checkbox" name="features" value="Performance">
+            Performance
+        </label>
+
+        <label>
+            <input type="checkbox" name="features" value="Design">
+            Design
+        </label>
+
+    </fieldset>
+
+    <label for="review">
+        Avaliação Escrita
+    </label>
+
+    <textarea
+        id="review"
+        name="review"
+        rows="5">
+    </textarea>
+
+    <label for="username">
+        Nome de Usuário
+    </label>
+
+    <input
+        type="text"
+        id="username"
+        name="username">
+
+    <input
+        type="submit"
+        value="Enviar Avaliação">
+
+</form>
+
+</main>
+
+<footer>
+
+<p>&copy;2026 Seu Nome</p>
+
+<p id="lastModified"></p>
+
+</footer>
+
+</body>
+</html>
