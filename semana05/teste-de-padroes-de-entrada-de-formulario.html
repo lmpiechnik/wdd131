@@ -1,0 +1,17 @@
+
+
+<main>
+  <h1>Teste de padrões de entrada de formulário</h1>
+  <p>1️⃣ No campo abaixo, digite caracteres que obedeçam ao padrão de entrada especificado.<br>O padrão predefinido requer uma sequência de 6 a 10 caracteres contendo pelo menos um número,<br>um caracter especial, uma letra maiúscula e uma minúscula.</p>
+    <p><code>padrao="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[!@#$%^&*])[A-Za-z\d!@#$%^&*]{6,10}$"</code></p>
+  <p>2️⃣ Insira um valor de teste no campo de entrada.</p>
+    <p>
+    3️⃣ O texto digitado e a borda ficarão verdes se atenderem aos requisitos do padrão.
+  </p>
+  <hr>
+    <form>
+    <label for="test">Digite caracteres de teste: </label>
+    <input type="text" id="test" name="test" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[!@#$%^&*])[A-Za-z\d!@#$%^&*]{6,10}$" title="De 6 a 10 caracteres inclusive, com pelo menos um número, um caractere especial, uma letra maiúscula e uma minúscula.">
+  </form>
+</main>
+<!-- Padrão de exemplo: Este padrão permite caracteres alfanuméricos (letras maiúsculas e minúsculas e dígitos de 0 a 9) e os caracteres especiais !@#$%^&*()_+-=. Permite um comprimento mínimo de 1 caractere e máximo de 20 caracteres. Também garante que haja apenas um caractere especial no campo de entrada e que ele não seja o primeiro nem o último caractere. -->
